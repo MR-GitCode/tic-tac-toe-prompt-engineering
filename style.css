@@ -20,7 +20,7 @@ body {
   
   table {
     border-collapse: collapse; /* Entfernt doppelte Außenlinien */
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   
   td {
@@ -47,5 +47,10 @@ tr:last-child td:last-child { border-bottom-right-radius: 5px; } /* Unten rechts
 
   td:hover {
     background-color: #444444;
+  }
+
+  #winner{
+    padding-bottom: 30px;
+    font-size: 24px !important;
   }
   
