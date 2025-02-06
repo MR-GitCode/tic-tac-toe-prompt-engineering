@@ -46,6 +46,6 @@ tr:last-child td:first-child { border-bottom-left-radius: 5px; } /* Unten links 
 tr:last-child td:last-child { border-bottom-right-radius: 5px; } /* Unten rechts */
 
   td:hover {
-    background-color: #444444; /* Etwas dunkleres Grau bei Hover */
+    background-color: #444444;
   }
   
