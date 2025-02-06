@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #323232;
+    color: #ffffff;
+  }
+  
+  #content {
+    display: inline-block;
+  }
+
+  .headline{
+    padding-bottom: 50px;
+  }
+  
+  table {
+    border-collapse: collapse; /* Entfernt doppelte Außenlinien */
+    margin: 0 auto;
+  }
+  
+  td {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    cursor: pointer;
+    border: 3px solid white; /* Trennlinien innerhalb der Tabelle */
+  }
+  
+  /* Entfernedie äußeren Trennlinien */
+  td:nth-child(1) { border-left: none; } /* Entfernt linke Randlinie */
+  td:nth-child(3) { border-right: none; } /* Entfernt rechte Randlinie */
+  tr:first-child td { border-top: none; } /* Entfernt obere Randlinie */
+  tr:last-child td { border-bottom: none; } /* Entfernt untere Randlinie */
+  
+/* Runde die äußeren Ecken der Tabelle ab */
+tr:first-child td:first-child { border-top-left-radius: 5px; } /* Oben links */
+tr:first-child td:last-child { border-top-right-radius: 5px; } /* Oben rechts */
+tr:last-child td:first-child { border-bottom-left-radius: 5px; } /* Unten links */
+tr:last-child td:last-child { border-bottom-right-radius: 5px; } /* Unten rechts */
+
+  td:hover {
+    background-color: #444444; /* Etwas dunkleres Grau bei Hover */
+  }
+  
