@@ -39,12 +39,6 @@ body {
   tr:first-child td { border-top: none; } /* Entfernt obere Randlinie */
   tr:last-child td { border-bottom: none; } /* Entfernt untere Randlinie */
   
-/* Runde die äußeren Ecken der Tabelle ab */
-tr:first-child td:first-child { border-top-left-radius: 5px; } /* Oben links */
-tr:first-child td:last-child { border-top-right-radius: 5px; } /* Oben rechts */
-tr:last-child td:first-child { border-bottom-left-radius: 5px; } /* Unten links */
-tr:last-child td:last-child { border-bottom-right-radius: 5px; } /* Unten rechts */
-
   td:hover {
     background-color: #444444;
   }
@@ -54,3 +48,31 @@ tr:last-child td:last-child { border-bottom-right-radius: 5px; } /* Unten rechts
     font-size: 24px !important;
   }
   
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #00b0ef;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #008ecf;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}

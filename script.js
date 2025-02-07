@@ -148,6 +148,18 @@ function drawLine(combination) {
     requestAnimationFrame(animateLine);
 }
 
+function restartGame() {
+  // Reset des Spielfelds
+  fields = [null, null, null, null, null, null, null, null, null];
+  currentPlayer = 'circle';
+
+  // Gewinner-Text zurücksetzen
+  const winnerDiv = document.getElementById('winner');
+  winnerDiv.innerHTML = '';
+
+  // Neu rendern
+  render();
+}
 
 
 function createCircleSVG() {
